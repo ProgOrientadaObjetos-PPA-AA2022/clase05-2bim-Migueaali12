@@ -17,7 +17,7 @@ public class TransporteTaxi extends Transporte {
         cooperativaTaxi = n;
     }
     
-    
+    @Override
     public void establecerTarifa(){
         tarifa = 0.40 + (0.40*0.5);
     }
@@ -25,6 +25,15 @@ public class TransporteTaxi extends Transporte {
     
     public String obtenerCooperativaTaxi(){
         return cooperativaTaxi;
+    }
+    
+    @Override
+    public String toString() {
+        
+        String cadena = String.format("Transporte Taxi: %.2f",
+                + obtenerTarifa());
+        
+        return cadena;
     }
         
     
