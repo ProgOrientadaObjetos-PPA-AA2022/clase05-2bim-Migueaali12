@@ -33,6 +33,7 @@ public class Principal2 {
                     
                     TransporteBus bus = new TransporteBus();
                     bus.establecerCooperativaBus(coperativa);
+                    bus.establecerTarifa();
                     lista.add(bus);
                                       
                 break;
@@ -40,10 +41,12 @@ public class Principal2 {
                 case 2: 
                     
                     System.out.println("Ingrese la coperativa de taxi:");
+                    sc.nextLine();
                     String coperativat = sc.nextLine();
                     
                     TransporteTaxi taxi = new TransporteTaxi();
                     taxi.establecerCooperativaTaxi(coperativat);
+                    taxi.establecerTarifa();
                     lista.add(taxi);
                                       
                 break;
@@ -51,10 +54,12 @@ public class Principal2 {
                 case 3: 
                     
                     System.out.println("Ingrese la aerolinea:");
+                    sc.nextLine();
                     String aerolinea = sc.nextLine();
                     
                     TransporteAereo aereo = new TransporteAereo();
                     aereo.establecerAerolinea(aerolinea);
+                    aereo.establecerTarifa();
                     lista.add(aereo);
                                       
                 break;
@@ -62,10 +67,12 @@ public class Principal2 {
                 case 4: 
                     
                     System.out.println("Ingrese el tipo de barco:");
+                    sc.nextLine();
                     String tipo = sc.nextLine();
                     
                     TransporteMaritimo barco = new TransporteMaritimo();
                     barco.establecerTipo(tipo);
+                    barco.establecerTarifa();
                     lista.add(barco);
                                       
                 break;
