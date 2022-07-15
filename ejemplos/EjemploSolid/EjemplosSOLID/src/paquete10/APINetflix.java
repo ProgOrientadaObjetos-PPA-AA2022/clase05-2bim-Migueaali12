@@ -12,12 +12,18 @@ public class APINetflix implements APIMovie{
     
     @Override
     public void establecerApiKey(String ak){
-        apiKey = ak+123123;
+        apiKey =String.format("%s%s",ak, "123123");
     }
     
     @Override
     public String obtenerApiKey(){
         return apiKey;
     }
-    
+    @Override
+    public String toString() {
+        String cadena = String.format("API NETFLIX\n"
+                + "KEY: %s\n",obtenerApiKey());      
+        
+        return cadena;
+    }
 }

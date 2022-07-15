@@ -30,7 +30,7 @@ public class EvaluacionEnsayo extends Evaluacion{
         return totalProblemas;
     }
     
-    
+     
     public void establecerPromedioObjetivas(){
         throw new RuntimeException("Sin implementar establecerPromedioObjetivas");
     }
