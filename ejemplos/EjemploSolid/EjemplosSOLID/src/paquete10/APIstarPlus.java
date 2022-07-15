@@ -4,27 +4,31 @@
  */
 package paquete10;
 
+import java.io.Serializable;
+
 /**
  *
  * @author SALA I
  */
-public class APIstarPlus implements APIMovie{
-     private String apiKey;
-    
+public class APIstarPlus implements APIMovie, Serializable {
+
+    private String apiKey;
+
     @Override
-    public void establecerApiKey(String ak){
-        apiKey =String.format("%s%s",ak, "988448");
+    public void establecerApiKey(String ak) {
+        apiKey = String.format("%s%s", ak, "988448");
     }
-    
+
     @Override
-    public String obtenerApiKey(){
+    public String obtenerApiKey() {
         return apiKey;
     }
-     @Override
+
+    @Override
     public String toString() {
         String cadena = String.format("API AMAZON PRIME\n"
-                + "KEY: %s\n",obtenerApiKey());      
-        
+        );
+
         return cadena;
     }
 }

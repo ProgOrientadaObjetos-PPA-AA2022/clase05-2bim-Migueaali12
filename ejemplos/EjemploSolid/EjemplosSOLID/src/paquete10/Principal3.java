@@ -1,13 +1,15 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
- */
 package paquete10;
 
-/**
- *
- * @author SALA I
- */
 public class Principal3 {
-    //PResentar
+
+    public static void main(String[] args) {
+
+        String nombreArchivoPelis = "data/peliculas.dat";
+
+        LecturaPeliculas lecturaP = new LecturaPeliculas(nombreArchivoPelis);
+            lecturaP.establecerPeliculas();
+            System.out.println(lecturaP);
+
+    }
+
 }

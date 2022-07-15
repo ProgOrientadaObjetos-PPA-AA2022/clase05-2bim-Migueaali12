@@ -4,11 +4,13 @@
  */
 package paquete10;
 
+import java.io.Serializable;
+
 /**
  *
  * @author SALA I
  */
-public class APIDirectvGO implements APIMovie {
+public class APIDirectvGO implements APIMovie, Serializable {
 
     private String apiKey;
 
@@ -25,7 +27,7 @@ public class APIDirectvGO implements APIMovie {
     @Override
     public String toString() {
         String cadena = String.format("API DIRECTV GO\n"
-                + "KEY: %s\n", obtenerApiKey());
+                );
 
         return cadena;
     }

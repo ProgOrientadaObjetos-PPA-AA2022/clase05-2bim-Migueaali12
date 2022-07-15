@@ -7,7 +7,7 @@ package paquete10;
 
 import java.io.Serializable;
 
-public class GeneradorPeliculas implements Serializable{
+public class GeneradorPeliculas implements Serializable {
 
     private APIMovie llave;
     private String url;
@@ -30,7 +30,8 @@ public class GeneradorPeliculas implements Serializable{
 
     @Override
     public String toString() {
-        String cadena = String.format("%s", llave.toString());
+        String cadena = String.format("%s"
+                + "URL: %s\n", llave.toString(), url);
         return cadena;
     }
     /*@Override

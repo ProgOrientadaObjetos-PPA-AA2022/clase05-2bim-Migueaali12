@@ -5,7 +5,9 @@
  */
 package paquete10;
 
-public class APIAmazonMovie implements APIMovie {
+import java.io.Serializable;
+
+public class APIAmazonMovie implements APIMovie, Serializable {
 
     private String apiKey;
 
@@ -22,7 +24,7 @@ public class APIAmazonMovie implements APIMovie {
     @Override
     public String toString() {
         String cadena = String.format("API AMAZON MOVIE\n"
-                + "KEY: %s\n", obtenerApiKey());
+                );
 
         return cadena;
     }
